@@ -1,5 +1,5 @@
-# En considérant les termes pairs de la séquence de Fibonacci dont la valeur n’excède pas 4 millions,
-# calculez leur somme.
+# By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
+# find the sum of the even-valued terms.
 
 iterator fibo: int =
   var (a, b) = (0, 1)
