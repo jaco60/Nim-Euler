@@ -13,5 +13,4 @@ proc factors(nb: int64): seq[int64] =
   
 
 when isMainModule:
-  let facts = factors(600851475143'i64).filterIt(isPrime(it))
-  echo $facts[^1]
+  echo factors(600851475143'i64).filterIt(isPrime(it)).max
