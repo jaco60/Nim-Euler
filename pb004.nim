@@ -1,10 +1,5 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
-import sequtils
-
-proc reversed(str: string): string =
-  result = ""
-  for i in countdown(str.len - 1, 0):
-    result &= str[i]
+import sequtils, unicode
 
 proc isPalin(str: string): bool = 
   return str == str.reversed
@@ -17,3 +12,6 @@ for x in 100..999:
       products.add(prod)
 
 echo products.max
+
+doAssert "foobar".reversed == "raboof"
+doAssert "先秦兩漢".reversed == "漢兩秦先"
