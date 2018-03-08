@@ -12,6 +12,3 @@ for x in 100..999:
       products.add(prod)
 
 echo products.max
-
-doAssert "foobar".reversed == "raboof"
-doAssert "先秦兩漢".reversed == "漢兩秦先"
